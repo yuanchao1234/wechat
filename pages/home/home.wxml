@@ -4,4 +4,4 @@
     <image lazy-load="true" mode="widthFix" show-menu-by-longpress="{{true}}" src="{{'http://daxun.kuboy.top' + item}}"></image>
   </swiper-item>
 </swiper>
-<prolist/>
+<prolist prolist="{{prolist}}"/>

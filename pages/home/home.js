@@ -9,6 +9,7 @@ Page({
    */
   data: {
     bannerlist: [],
+    prolist: [],
     yuan:156
   },
 
@@ -17,7 +18,9 @@ Page({
    */
   async onLoad(options) {
     // 请求轮播图数据
-    this.getBannerData()
+    this.getBannerData();
+    // 请求列表数据
+    this.getProlistData();
   },
   // 请求轮播图数据
   async getBannerData() {
@@ -26,6 +29,20 @@ Page({
     this.setData({
       bannerlist: data,
     });
+  },
+  // 请求列表数据
+  getProlistData() {
+    request({
+      url: '/pro',
+      data: {}
+    }).then((res) => { // 建议使用箭头函数---this指向
+      console.log(res)
+      this.setData({
+        prolist: res.data.data
+      })
+    }).catch((err) => {
+      console.log(err)
+    })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

@@ -1,0 +1,5 @@
+<!--pages/detail/detail.wxml-->
+<image src="{{proimg}}"></image>
+<view>{{proname}}</view>
+<view>￥{{price}}</view>
+<rich-text nodes="{{detail}}" ></rich-text>

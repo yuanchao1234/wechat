@@ -7,7 +7,8 @@
     "pages/logs/logs",
     "pages/user/user",
     "pages/test/test",
-    "pages/map/map"
+    "pages/map/map",
+    "pages/detail/detail"
   ],
   "window": {
     "navigationBarBackgroundColor": "#f66",
