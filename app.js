@@ -2,6 +2,8 @@
 App({
   onLaunch: function () {
     // console.log(this.chao());
+    // 获取设备的信息
+    this.getDeviceInfoFn()
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -37,6 +39,14 @@ App({
   //自定义的全局变量，可以是任何的数据类型 —————— 状态管理器
   globalData: {
     userInfo: null
+  },
+  getDeviceInfoFn() {
+    wx.getSystemInfo({
+      success: (res) => {
+        // 修改全局数据
+        this.globalData.deviceinfo = res;
+      }
+    })
   },
   yuan:156,
   chao(){
