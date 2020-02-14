@@ -1,6 +1,8 @@
 /* pages/home/home.wxss */
-.ul .li {
-  height: 50px;
+.backtop {
+  position: fixed;
+  bottom: 20px; 
+  right:10px;
 }
 swiper image {
   width: 100%;
