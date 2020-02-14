@@ -1,0 +1,7 @@
+<!--pages/home/home.wxml-->
+<swiper indicator-dots="true" indicator-color="rgba(88,188,88,1)" indicator-active-color="#f66" autoplay="true" interval="2000">
+  <swiper-item wx:for="{{bannerlist}}" wx:key="*this">
+    <image lazy-load="true" mode="widthFix" show-menu-by-longpress="{{true}}" src="{{'http://daxun.kuboy.top' + item}}"></image>
+  </swiper-item>
+</swiper>
+<prolist/>

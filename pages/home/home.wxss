@@ -1,0 +1,7 @@
+/* pages/home/home.wxss */
+.ul .li {
+  height: 50px;
+}
+swiper image {
+  width: 100%;
+}

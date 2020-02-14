@@ -1,0 +1,14 @@
+<!--pages/test/test.wxml-->
+<view>
+  {{ message }}
+</view>
+<!-- vue 绑定属性 :class="message" -->
+<!-- react class={message} -->
+<view class="{{message}}">
+  组件属性
+</view>
+<!-- 控制属性 -->
+<!-- vue v-if="flag" v-if  v-else-if v-else -->
+<view wx:if="{{flag}}">如果为真我就显示1</view>
+<view wx:else="{{flag}}">如果为真我就显示2</view>
+<!-- wx:if wx:elif wx:else -->
