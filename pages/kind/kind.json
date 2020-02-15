@@ -1,3 +1,12 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "van-tab": "/miniprogram_npm/@vant/weapp/tab/index",
+    "van-tabs": "/miniprogram_npm/@vant/weapp/tabs/index",
+    "van-sidebar": "/miniprogram_npm/@vant/weapp/sidebar/index",
+    "van-sidebar-item": "/miniprogram_npm/@vant/weapp/sidebar-item/index",
+    "van-row": "/miniprogram_npm/@vant/weapp/row/index",
+    "van-col": "/miniprogram_npm/@vant/weapp/col/index",
+    "van-card": "/miniprogram_npm/@vant/weapp/card/index",
+    "prolist": "/components/prolist/prolist"
+  }
 }

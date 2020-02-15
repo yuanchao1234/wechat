@@ -1,2 +1,14 @@
-<!--pages/kind/kind.wxml-->
-<text>pages/kind/kind.wxml</text>
+<van-tabs active="{{ active }}" bind:change="onChange">
+  <van-tab title="{{item}}" wx:for="{{titles}}" wx:key="*this">
+    <van-row>
+      <van-col span="6">
+        <van-sidebar active-key="{{ activeKey }}" bind:change="onChange2">
+          <van-sidebar-item wx:for="{{brandlist}}" title="{{ item.brand }}"  wx:key="*this"/>
+        </van-sidebar>
+      </van-col>
+      <van-col span="18">
+        <prolist prolist="{{kindlist}}"/>
+      </van-col>
+    </van-row>
+  </van-tab>
+</van-tabs>
