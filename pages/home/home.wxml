@@ -5,4 +5,4 @@
   </swiper-item>
 </swiper>
 <prolist prolist="{{prolist}}"/>
-<button class="backtop" bindtap="backtop">返回顶部</button>
+<button class="backtop" bindtap="backtop" hidden="{{floorstatus}}" >返回顶部</button>

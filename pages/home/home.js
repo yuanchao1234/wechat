@@ -10,7 +10,8 @@ Page({
   data: {
     bannerlist: [],
     prolist: [],
-    pageCode: 1 // 默认已经加载了一次数据
+    pageCode: 1, // 默认已经加载了一次数据
+    floorstatus:true
   },
   backtop() {
     wx.pageScrollTo({
@@ -21,6 +22,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   async onLoad(options) {
+    console.log(456);
     // 请求轮播图数据
     this.getBannerData();
     // 请求列表数据
@@ -59,6 +61,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    console.log(789);
 
   },
 
@@ -146,5 +149,17 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  onPageScroll: function (e) {
+    if (e.scrollTop > 200) {
+      this.setData({
+        floorstatus: false
+      });
+    } else {
+      this.setData({
+        floorstatus: true
+      });
+    }
   }
 })
